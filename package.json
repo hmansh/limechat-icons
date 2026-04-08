@@ -16,7 +16,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --clean"
+    "generate": "node scripts/generate.mjs",
+    "build": "npm run generate && tsup src/index.ts --format cjs,esm --dts --clean"
   },
   "devDependencies": {
     "tsup": "^8.0.0",

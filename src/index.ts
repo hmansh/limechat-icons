@@ -1,2 +1,9 @@
-export type { IconProps } from './icons/IconX';
+export { IconArrowRight } from './icons/IconArrowRight';
+export { IconChevronDown } from './icons/IconChevronDown';
+export { IconMicrophone } from './icons/IconMicrophone';
+export { IconMoodSmile } from './icons/IconMoodSmile';
+export { IconPaperclip } from './icons/IconPaperclip';
+export { IconPlayerStop } from './icons/IconPlayerStop';
+export { IconShoppingBag } from './icons/IconShoppingBag';
+export { IconSparkles2 } from './icons/IconSparkles2';
 export { IconX } from './icons/IconX';
