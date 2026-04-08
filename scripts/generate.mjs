@@ -22,14 +22,17 @@ async function main() {
     const exportName = `Icon${toPascalCase(name)}`;
     const raw = await readFile(join(iconsDir, file), 'utf-8');
 
-    // Strip class attribute (tabler-specific), replace size
+    // Strip class attribute (tabler-specific), replace size/color/strokeWidth
     const svg = raw
       .replace(/\s+class="[^"]*"/g, '')
       .replace(/width="\d+"/, 'width="${size}"')
       .replace(/height="\d+"/, 'height="${size}"')
+      .replace(/stroke="currentColor"/, 'stroke="${color}"')
+      .replace(/fill="currentColor"/, 'fill="${color}"')
+      .replace(/stroke-width="\d+(\.\d+)?"/, 'stroke-width="${strokeWidth}"')
       .replace(/`/g, '\\`');
 
-    const ts = `export function ${exportName}({ size = 24 }: { size?: number } = {}): string {
+    const ts = `export function ${exportName}({ size = 24, color = 'currentColor', strokeWidth = 2 }: { size?: number; color?: string; strokeWidth?: number } = {}): string {
   return \`${svg}\`;
 }
 `;

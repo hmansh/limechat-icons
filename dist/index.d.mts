@@ -1,33 +1,49 @@
-declare function IconArrowRight({ size }?: {
+declare function IconArrowRight({ size, color, strokeWidth }?: {
     size?: number;
+    color?: string;
+    strokeWidth?: number;
 }): string;
 
-declare function IconChevronDown({ size }?: {
+declare function IconChevronDown({ size, color, strokeWidth }?: {
     size?: number;
+    color?: string;
+    strokeWidth?: number;
 }): string;
 
-declare function IconMicrophone({ size }?: {
+declare function IconMicrophone({ size, color, strokeWidth }?: {
     size?: number;
+    color?: string;
+    strokeWidth?: number;
 }): string;
 
-declare function IconMoodSmile({ size }?: {
+declare function IconMoodSmile({ size, color, strokeWidth }?: {
     size?: number;
+    color?: string;
+    strokeWidth?: number;
 }): string;
 
-declare function IconPaperclip({ size }?: {
+declare function IconPaperclip({ size, color, strokeWidth }?: {
     size?: number;
+    color?: string;
+    strokeWidth?: number;
 }): string;
 
-declare function IconPlayerStop({ size }?: {
+declare function IconPlayerStop({ size, color, strokeWidth }?: {
     size?: number;
+    color?: string;
+    strokeWidth?: number;
 }): string;
 
-declare function IconShoppingBag({ size }?: {
+declare function IconShoppingBag({ size, color, strokeWidth }?: {
     size?: number;
+    color?: string;
+    strokeWidth?: number;
 }): string;
 
-declare function IconSparkles2({ size }?: {
+declare function IconSparkles2({ size, color, strokeWidth }?: {
     size?: number;
+    color?: string;
+    strokeWidth?: number;
 }): string;
 
 interface IconProps {
